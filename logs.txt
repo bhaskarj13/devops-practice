@@ -1,0 +1,992 @@
+
+==> Audit <==
+|--------------|-------------------------------|----------|-----------------------|---------|---------------------|---------------------|
+|   Command    |             Args              | Profile  |         User          | Version |     Start Time      |      End Time       |
+|--------------|-------------------------------|----------|-----------------------|---------|---------------------|---------------------|
+| update-check |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 16:45 IST | 02 May 25 16:45 IST |
+| update-check |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:04 IST | 02 May 25 17:04 IST |
+| start        |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:05 IST | 02 May 25 17:17 IST |
+| start        |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:20 IST | 02 May 25 17:21 IST |
+| start        |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:22 IST | 02 May 25 17:24 IST |
+| service      | devops-practice-service --url | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:26 IST |                     |
+| service      | devops-practice-service --url | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:27 IST |                     |
+| delete       |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:31 IST | 02 May 25 17:31 IST |
+| start        |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 02 May 25 17:31 IST | 02 May 25 17:33 IST |
+| update-check |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 13:51 IST | 03 May 25 13:51 IST |
+| start        |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 14:14 IST |                     |
+| update-check |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 14:27 IST | 03 May 25 14:27 IST |
+| start        | --driver=docker               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 14:32 IST | 03 May 25 14:33 IST |
+| docker-env   |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 14:41 IST | 03 May 25 14:41 IST |
+| docker-env   |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 14:42 IST | 03 May 25 14:42 IST |
+| docker-env   | minikube docker-env           | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 14:43 IST | 03 May 25 14:43 IST |
+| stop         |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 15:20 IST | 03 May 25 15:20 IST |
+| delete       |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 15:21 IST | 03 May 25 15:24 IST |
+| start        |                               | minikube | DESKTOP-68PD0J1\bhask | v1.35.0 | 03 May 25 15:24 IST |                     |
+|--------------|-------------------------------|----------|-----------------------|---------|---------------------|---------------------|
+
+
+==> Last Start <==
+Log file created at: 2025/05/03 15:24:47
+Running on machine: DESKTOP-68PD0J1
+Binary: Built with gc go1.23.4 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0503 15:24:47.197383    8320 out.go:345] Setting OutFile to fd 84 ...
+I0503 15:24:47.198956    8320 out.go:397] isatty.IsTerminal(84) = true
+I0503 15:24:47.198956    8320 out.go:358] Setting ErrFile to fd 88...
+I0503 15:24:47.198995    8320 out.go:397] isatty.IsTerminal(88) = true
+I0503 15:24:47.198995    8320 oci.go:582] shell is pointing to dockerd inside minikube. will unset to use host
+I0503 15:24:47.219722    8320 out.go:352] Setting JSON to false
+I0503 15:24:47.233080    8320 start.go:129] hostinfo: {"hostname":"DESKTOP-68PD0J1","uptime":3728,"bootTime":1746262359,"procs":260,"os":"windows","platform":"Microsoft Windows 10 Pro","platformFamily":"Standalone Workstation","platformVersion":"10.0.19045.5796 Build 19045.5796","kernelVersion":"10.0.19045.5796 Build 19045.5796","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"44cfa438-2ebe-4dc9-b8ae-87d231f19820"}
+W0503 15:24:47.233080    8320 start.go:137] gopshost.Virtualization returned error: not implemented yet
+I0503 15:24:47.255614    8320 out.go:177] 😄  minikube v1.35.0 on Microsoft Windows 10 Pro 10.0.19045.5796 Build 19045.5796
+I0503 15:24:47.268295    8320 notify.go:220] Checking for updates...
+I0503 15:24:47.268809    8320 out.go:177]     ▪ MINIKUBE_ACTIVE_DOCKERD=minikube
+I0503 15:24:47.288403    8320 driver.go:394] Setting default libvirt URI to qemu:///system
+I0503 15:24:47.288403    8320 global.go:112] Querying for installed drivers using PATH=C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Amazon Corretto\jdk11.0.24_8\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\HashiCorp\Vagrant\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.9\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\DevTools\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\minikube;C:\Program Files\Kubernetes\Minikube;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\bhask\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\bhask\AppData\Local\Programs\Python\Python39\;C:\Users\bhask\AppData\Local\Microsoft\WindowsApps;;C:\Users\bhask\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Oracle\VirtualBox;C:\Users\bhask\AppData\Roaming\npm
+I0503 15:24:47.336573    8320 global.go:133] podman default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "podman": executable file not found in %PATH% Reason: Fix:Install Podman Doc:https://minikube.sigs.k8s.io/docs/drivers/podman/ Version:}
+I0503 15:24:47.337506    8320 global.go:133] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0503 15:24:54.917637    8320 global.go:133] hyperv default: true priority: 8, state: {Installed:true Healthy:false Running:false NeedsImprovement:false Error:Hyper-V requires Administrator privileges Reason: Fix:Right-click the PowerShell icon and select Run as Administrator to open PowerShell in elevated mode. Doc: Version:}
+I0503 15:24:54.940617    8320 global.go:133] qemu2 default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "qemu-system-x86_64": executable file not found in %PATH% Reason: Fix:Install qemu-system Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/qemu/ Version:}
+I0503 15:24:55.175243    8320 virtualbox.go:136] virtual box version: 7.0.8r156879
+I0503 15:24:55.175243    8320 global.go:133] virtualbox default: true priority: 6, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.8r156879
+}
+I0503 15:24:55.199582    8320 global.go:133] vmware default: false priority: 5, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "vmrun": executable file not found in %PATH% Reason: Fix:Install vmrun Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/ Version:}
+I0503 15:24:55.336731    8320 docker.go:123] docker version: linux-28.0.4:Docker Desktop 4.40.0 (187762)
+I0503 15:24:55.355389    8320 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+I0503 15:24:55.870057    8320 info.go:266] docker info: {ID:41f8f2fd-d88e-4794-80c9-f02bd6943dde Containers:9 ContainersRunning:1 ContainersPaused:0 ContainersStopped:8 Images:4 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:false BridgeNfIP6Tables:false Debug:false NFd:78 OomKillDisable:true NGoroutines:93 SystemTime:2025-05-03 09:54:55.805587426 +0000 UTC LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:17 KernelVersion:5.15.167.4-microsoft-standard-WSL2 OperatingSystem:Docker Desktop OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[::1/128 127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:4 MemTotal:4073578496 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy:http.docker.internal:3128 HTTPSProxy:http.docker.internal:3128 NoProxy:hubproxy.docker.internal Name:docker-desktop Labels:[com.docker.desktop.address=npipe://\\.\pipe\docker_cli] ExperimentalBuild:false ServerVersion:28.0.4 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:753481ec61c7c8955a23d6ff7bc8e4daed455734 Expected:753481ec61c7c8955a23d6ff7bc8e4daed455734} RuncCommit:{ID:v1.2.5-0-g59923ef Expected:v1.2.5-0-g59923ef} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=unconfined] ProductLicense: Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set WARNING: daemon is not using the default seccomp profile] ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:ai Path:C:\Program Files\Docker\cli-plugins\docker-ai.exe SchemaVersion:0.1.0 ShortDescription:Docker AI Agent - Ask Gordon Vendor:Docker Inc. Version:v1.1.3] map[Name:buildx Path:C:\Program Files\Docker\cli-plugins\docker-buildx.exe SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.22.0-desktop.1] map[Name:cloud Path:C:\Program Files\Docker\cli-plugins\docker-cloud.exe SchemaVersion:0.1.0 ShortDescription:Docker Cloud Vendor:Docker Inc. Version:0.2.20] map[Name:compose Path:C:\Program Files\Docker\cli-plugins\docker-compose.exe SchemaVersion:0.1.0 ShortDescription:Docker Compose Vendor:Docker Inc. Version:v2.34.0-desktop.1] map[Name:debug Path:C:\Program Files\Docker\cli-plugins\docker-debug.exe SchemaVersion:0.1.0 ShortDescription:Get a shell into any image or container Vendor:Docker Inc. Version:0.0.38] map[Name:desktop Path:C:\Program Files\Docker\cli-plugins\docker-desktop.exe SchemaVersion:0.1.0 ShortDescription:Docker Desktop commands (Beta) Vendor:Docker Inc. Version:v0.1.6] map[Name:dev Path:C:\Program Files\Docker\cli-plugins\docker-dev.exe SchemaVersion:0.1.0 ShortDescription:Docker Dev Environments Vendor:Docker Inc. Version:v0.1.2] map[Name:extension Path:C:\Program Files\Docker\cli-plugins\docker-extension.exe SchemaVersion:0.1.0 ShortDescription:Manages Docker extensions Vendor:Docker Inc. Version:v0.2.27] map[Name:init Path:C:\Program Files\Docker\cli-plugins\docker-init.exe SchemaVersion:0.1.0 ShortDescription:Creates Docker-related starter files for your project Vendor:Docker Inc. Version:v1.4.0] map[Name:sbom Path:C:\Program Files\Docker\cli-plugins\docker-sbom.exe SchemaVersion:0.1.0 ShortDescription:View the packaged-based Software Bill Of Materials (SBOM) for an image URL:https://github.com/docker/sbom-cli-plugin Vendor:Anchore Inc. Version:0.6.0] map[Name:scout Path:C:\Program Files\Docker\cli-plugins\docker-scout.exe SchemaVersion:0.1.0 ShortDescription:Docker Scout Vendor:Docker Inc. Version:v1.17.0]] Warnings:<nil>}}
+I0503 15:24:55.871133    8320 global.go:133] docker default: true priority: 9, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0503 15:24:55.872212    8320 driver.go:316] not recommending "ssh" due to default: false
+I0503 15:24:55.872212    8320 driver.go:311] not recommending "hyperv" due to health: Hyper-V requires Administrator privileges
+I0503 15:24:55.872212    8320 driver.go:351] Picked: docker
+I0503 15:24:55.872212    8320 driver.go:352] Alternatives: [virtualbox ssh]
+I0503 15:24:55.872212    8320 driver.go:353] Rejects: [podman hyperv qemu2 vmware]
+I0503 15:24:55.913109    8320 out.go:177] ✨  Automatically selected the docker driver. Other choices: virtualbox, ssh
+I0503 15:24:55.932865    8320 start.go:297] selected driver: docker
+I0503 15:24:55.932865    8320 start.go:901] validating driver "docker" against <nil>
+I0503 15:24:55.932865    8320 start.go:912] status for docker: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0503 15:24:55.981679    8320 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+I0503 15:24:56.511351    8320 info.go:266] docker info: {ID:41f8f2fd-d88e-4794-80c9-f02bd6943dde Containers:9 ContainersRunning:1 ContainersPaused:0 ContainersStopped:8 Images:4 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:false BridgeNfIP6Tables:false Debug:false NFd:78 OomKillDisable:true NGoroutines:93 SystemTime:2025-05-03 09:54:56.457147489 +0000 UTC LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:17 KernelVersion:5.15.167.4-microsoft-standard-WSL2 OperatingSystem:Docker Desktop OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[::1/128 127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:4 MemTotal:4073578496 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy:http.docker.internal:3128 HTTPSProxy:http.docker.internal:3128 NoProxy:hubproxy.docker.internal Name:docker-desktop Labels:[com.docker.desktop.address=npipe://\\.\pipe\docker_cli] ExperimentalBuild:false ServerVersion:28.0.4 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:753481ec61c7c8955a23d6ff7bc8e4daed455734 Expected:753481ec61c7c8955a23d6ff7bc8e4daed455734} RuncCommit:{ID:v1.2.5-0-g59923ef Expected:v1.2.5-0-g59923ef} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=unconfined] ProductLicense: Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set WARNING: daemon is not using the default seccomp profile] ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:ai Path:C:\Program Files\Docker\cli-plugins\docker-ai.exe SchemaVersion:0.1.0 ShortDescription:Docker AI Agent - Ask Gordon Vendor:Docker Inc. Version:v1.1.3] map[Name:buildx Path:C:\Program Files\Docker\cli-plugins\docker-buildx.exe SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.22.0-desktop.1] map[Name:cloud Path:C:\Program Files\Docker\cli-plugins\docker-cloud.exe SchemaVersion:0.1.0 ShortDescription:Docker Cloud Vendor:Docker Inc. Version:0.2.20] map[Name:compose Path:C:\Program Files\Docker\cli-plugins\docker-compose.exe SchemaVersion:0.1.0 ShortDescription:Docker Compose Vendor:Docker Inc. Version:v2.34.0-desktop.1] map[Name:debug Path:C:\Program Files\Docker\cli-plugins\docker-debug.exe SchemaVersion:0.1.0 ShortDescription:Get a shell into any image or container Vendor:Docker Inc. Version:0.0.38] map[Name:desktop Path:C:\Program Files\Docker\cli-plugins\docker-desktop.exe SchemaVersion:0.1.0 ShortDescription:Docker Desktop commands (Beta) Vendor:Docker Inc. Version:v0.1.6] map[Name:dev Path:C:\Program Files\Docker\cli-plugins\docker-dev.exe SchemaVersion:0.1.0 ShortDescription:Docker Dev Environments Vendor:Docker Inc. Version:v0.1.2] map[Name:extension Path:C:\Program Files\Docker\cli-plugins\docker-extension.exe SchemaVersion:0.1.0 ShortDescription:Manages Docker extensions Vendor:Docker Inc. Version:v0.2.27] map[Name:init Path:C:\Program Files\Docker\cli-plugins\docker-init.exe SchemaVersion:0.1.0 ShortDescription:Creates Docker-related starter files for your project Vendor:Docker Inc. Version:v1.4.0] map[Name:sbom Path:C:\Program Files\Docker\cli-plugins\docker-sbom.exe SchemaVersion:0.1.0 ShortDescription:View the packaged-based Software Bill Of Materials (SBOM) for an image URL:https://github.com/docker/sbom-cli-plugin Vendor:Anchore Inc. Version:0.6.0] map[Name:scout Path:C:\Program Files\Docker\cli-plugins\docker-scout.exe SchemaVersion:0.1.0 ShortDescription:Docker Scout Vendor:Docker Inc. Version:v1.17.0]] Warnings:<nil>}}
+I0503 15:24:56.511917    8320 start_flags.go:310] no existing cluster config was found, will generate one from the flags 
+I0503 15:24:56.638093    8320 start_flags.go:393] Using suggested 2200MB memory alloc based on sys=8122MB, container=3884MB
+I0503 15:24:56.918574    8320 start_flags.go:929] Wait components to verify : map[apiserver:true system_pods:true]
+I0503 15:24:56.927001    8320 out.go:177] 📌  Using Docker Desktop driver with root privileges
+I0503 15:24:56.946432    8320 cni.go:84] Creating CNI manager for ""
+I0503 15:24:56.948451    8320 cni.go:158] "docker" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0503 15:24:56.948451    8320 start_flags.go:319] Found "bridge CNI" CNI - setting NetworkPlugin=cni
+I0503 15:24:56.948817    8320 start.go:340] cluster config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:docker HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\bhask:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0503 15:24:56.959536    8320 out.go:177] 👍  Starting "minikube" primary control-plane node in "minikube" cluster
+I0503 15:24:56.967534    8320 cache.go:121] Beginning downloading kic base image for docker with docker
+I0503 15:24:57.001683    8320 out.go:177] 🚜  Pulling base image v0.0.46 ...
+I0503 15:24:57.013713    8320 image.go:81] Checking for gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 in local docker daemon
+I0503 15:24:57.015145    8320 preload.go:131] Checking if preload exists for k8s version v1.32.0 and runtime docker
+I0503 15:24:57.015145    8320 preload.go:146] Found local preload: C:\Users\bhask\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.32.0-docker-overlay2-amd64.tar.lz4
+I0503 15:24:57.015145    8320 cache.go:56] Caching tarball of preloaded images
+I0503 15:24:57.015748    8320 preload.go:172] Found C:\Users\bhask\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.32.0-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0503 15:24:57.015748    8320 cache.go:59] Finished verifying existence of preloaded tar for v1.32.0 on docker
+I0503 15:24:57.017205    8320 profile.go:143] Saving config to C:\Users\bhask\.minikube\profiles\minikube\config.json ...
+I0503 15:24:57.017205    8320 lock.go:35] WriteFile acquiring C:\Users\bhask\.minikube\profiles\minikube\config.json: {Name:mk8d56141b6498c791e09addd325dfb10f110163 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0503 15:24:57.228895    8320 image.go:100] Found gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 in local docker daemon, skipping pull
+I0503 15:24:57.229882    8320 cache.go:145] gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 exists in daemon, skipping load
+I0503 15:24:57.231901    8320 cache.go:227] Successfully downloaded all kic artifacts
+I0503 15:24:57.233883    8320 start.go:360] acquireMachinesLock for minikube: {Name:mk4af82f6c8e908e241a1473311731182e9c0ca7 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0503 15:24:57.233883    8320 start.go:364] duration metric: took 0s to acquireMachinesLock for "minikube"
+I0503 15:24:57.234887    8320 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:docker HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\bhask:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s} &{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0503 15:24:57.234887    8320 start.go:125] createHost starting for "" (driver="docker")
+I0503 15:24:57.242886    8320 out.go:235] 🔥  Creating docker container (CPUs=2, Memory=2200MB) ...
+I0503 15:24:57.246885    8320 start.go:159] libmachine.API.Create for "minikube" (driver="docker")
+I0503 15:24:57.246885    8320 client.go:168] LocalClient.Create starting
+I0503 15:24:57.251885    8320 main.go:141] libmachine: Reading certificate data from C:\Users\bhask\.minikube\certs\ca.pem
+I0503 15:24:57.251885    8320 main.go:141] libmachine: Decoding PEM data...
+I0503 15:24:57.251885    8320 main.go:141] libmachine: Parsing certificate...
+I0503 15:24:57.259886    8320 main.go:141] libmachine: Reading certificate data from C:\Users\bhask\.minikube\certs\cert.pem
+I0503 15:24:57.259886    8320 main.go:141] libmachine: Decoding PEM data...
+I0503 15:24:57.259886    8320 main.go:141] libmachine: Parsing certificate...
+I0503 15:24:57.310791    8320 cli_runner.go:164] Run: docker network inspect minikube --format "{"Name": "{{.Name}}","Driver": "{{.Driver}}","Subnet": "{{range .IPAM.Config}}{{.Subnet}}{{end}}","Gateway": "{{range .IPAM.Config}}{{.Gateway}}{{end}}","MTU": {{if (index .Options "com.docker.network.driver.mtu")}}{{(index .Options "com.docker.network.driver.mtu")}}{{else}}0{{end}}, "ContainerIPs": [{{range $k,$v := .Containers }}"{{$v.IPv4Address}}",{{end}}]}"
+I0503 15:24:57.419490    8320 network_create.go:77] Found existing network {name:minikube subnet:0xc001712480 gateway:[0 0 0 0 0 0 0 0 0 0 255 255 192 168 49 1] mtu:1500}
+I0503 15:24:57.428489    8320 kic.go:121] calculated static IP "192.168.49.2" for the "minikube" container
+I0503 15:24:57.468491    8320 cli_runner.go:164] Run: docker ps -a --format {{.Names}}
+I0503 15:24:57.619377    8320 cli_runner.go:164] Run: docker container inspect minikube --format {{.Config.Labels}}
+I0503 15:24:57.758393    8320 kic.go:169] Found already existing abandoned minikube container, will try to delete.
+I0503 15:24:57.823621    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:24:58.053418    8320 cli_runner.go:164] Run: docker exec --privileged -t minikube /bin/bash -c "sudo init 0"
+W0503 15:24:58.248465    8320 cli_runner.go:211] docker exec --privileged -t minikube /bin/bash -c "sudo init 0" returned with exit code 1
+I0503 15:24:58.248465    8320 oci.go:656] error shutdown minikube: docker exec --privileged -t minikube /bin/bash -c "sudo init 0": exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:24:59.266652    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:24:59.354116    8320 oci.go:670] temporary error: container minikube status is Error but expect it to be exited
+I0503 15:24:59.354116    8320 oci.go:676] Successfully shutdown container minikube
+I0503 15:24:59.370383    8320 cli_runner.go:164] Run: docker rm -f -v minikube
+W0503 15:24:59.457097    8320 cli_runner.go:211] docker rm -f -v minikube returned with exit code 1
+E0503 15:24:59.457097    8320 kic.go:171] Failed to delete a conflicting minikube container minikube. You might need to restart your docker daemon and delete it manually and try again: delete minikube: docker rm -f -v minikube: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a: driver "overlay2" failed to remove root filesystem: unlinkat /var/lib/docker/overlay2/4bc89d518231d253939d2f376c991f105966526ec4fc73b1887aa3221724f434: read-only file system
+I0503 15:24:59.483878    8320 cli_runner.go:164] Run: docker volume create minikube --label name.minikube.sigs.k8s.io=minikube --label created_by.minikube.sigs.k8s.io=true
+I0503 15:24:59.559300    8320 oci.go:103] Successfully created a docker volume minikube
+I0503 15:24:59.576700    8320 cli_runner.go:164] Run: docker run --rm --name minikube-preload-sidecar --label created_by.minikube.sigs.k8s.io=true --label name.minikube.sigs.k8s.io=minikube --entrypoint /usr/bin/test -v minikube:/var gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 -d /var/lib
+W0503 15:24:59.694257    8320 cli_runner.go:211] docker run --rm --name minikube-preload-sidecar --label created_by.minikube.sigs.k8s.io=true --label name.minikube.sigs.k8s.io=minikube --entrypoint /usr/bin/test -v minikube:/var gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 -d /var/lib returned with exit code 125
+I0503 15:24:59.694257    8320 client.go:171] duration metric: took 2.4473721s to LocalClient.Create
+I0503 15:25:01.723435    8320 ssh_runner.go:195] Run: sh -c "df -h /var | awk 'NR==2{print $5}'"
+I0503 15:25:01.740445    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:01.845825    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:25:01.846354    8320 retry.go:31] will retry after 374.71115ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:02.238277    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:02.323727    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:25:02.323727    8320 retry.go:31] will retry after 552.719851ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:02.896055    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:02.984059    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:25:02.984059    8320 retry.go:31] will retry after 515.189123ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:03.526385    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:03.611830    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+W0503 15:25:03.611975    8320 start.go:268] error running df -h /var: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+W0503 15:25:03.611975    8320 start.go:235] error getting percentage of /var that is free: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:03.639499    8320 ssh_runner.go:195] Run: sh -c "df -BG /var | awk 'NR==2{print $4}'"
+I0503 15:25:03.660664    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:03.784083    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:25:03.784083    8320 retry.go:31] will retry after 356.554062ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:04.158199    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:04.259221    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:25:04.259221    8320 retry.go:31] will retry after 495.176008ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:04.795034    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:04.900638    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:25:04.900638    8320 retry.go:31] will retry after 649.913993ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:05.572487    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:25:05.653920    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+W0503 15:25:05.653920    8320 start.go:283] error running df -BG /var: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+W0503 15:25:05.653920    8320 start.go:240] error getting GiB of /var that is available: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:25:05.653920    8320 start.go:128] duration metric: took 8.4190337s to createHost
+I0503 15:25:05.653920    8320 start.go:83] releasing machines lock for "minikube", held for 8.4200379s
+W0503 15:25:05.691872    8320 start.go:714] error starting host: creating host: create: creating: setting up container node: preparing volume for minikube container: docker run --rm --name minikube-preload-sidecar --label created_by.minikube.sigs.k8s.io=true --label name.minikube.sigs.k8s.io=minikube --entrypoint /usr/bin/test -v minikube:/var gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 -d /var/lib: exit status 125
+stdout:
+
+stderr:
+docker: Error response from daemon: mkdir /var/lib/docker/overlay2/eb5683e3442f4dbe83775760f43ca84856e58984e13731f29233993e3bfdb587-init: read-only file system
+
+Run 'docker run --help' for more information
+I0503 15:25:05.728871    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:05.826567    8320 stop.go:39] StopHost: minikube
+W0503 15:25:05.827112    8320 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0503 15:25:05.855200    8320 out.go:177] ✋  Stopping node "minikube"  ...
+I0503 15:25:05.911680    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:05.993447    8320 stop.go:87] host is in state Error
+I0503 15:25:05.993447    8320 main.go:141] libmachine: Stopping "minikube"...
+I0503 15:25:06.025902    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:06.143226    8320 kic_runner.go:93] Run: systemctl --version
+I0503 15:25:06.143226    8320 kic_runner.go:114] Args: [docker exec --privileged minikube systemctl --version]
+I0503 15:25:06.274021    8320 kic_runner.go:93] Run: sudo service kubelet stop
+I0503 15:25:06.274021    8320 kic_runner.go:114] Args: [docker exec --privileged minikube sudo service kubelet stop]
+W0503 15:25:06.360567    8320 kic.go:453] couldn't stop kubelet. will continue with stop anyways: sudo service kubelet stop: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:25:06.400441    8320 kic_runner.go:93] Run: sudo service kubelet stop
+I0503 15:25:06.400441    8320 kic_runner.go:114] Args: [docker exec --privileged minikube sudo service kubelet stop]
+W0503 15:25:06.481641    8320 kic.go:455] couldn't force stop kubelet. will continue with stop anyways: sudo service kubelet stop: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:25:06.513730    8320 kic_runner.go:93] Run: docker ps -a --filter=name=k8s_.*_(kube-system|kubernetes-dashboard|storage-gluster|istio-operator)_ --format={{.ID}}
+I0503 15:25:06.513730    8320 kic_runner.go:114] Args: [docker exec --privileged minikube docker ps -a --filter=name=k8s_.*_(kube-system|kubernetes-dashboard|storage-gluster|istio-operator)_ --format={{.ID}}]
+I0503 15:25:06.597709    8320 kic.go:466] unable list containers : docker: docker ps -a --filter=name=k8s_.*_(kube-system|kubernetes-dashboard|storage-gluster|istio-operator)_ --format={{.ID}}: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:25:06.597709    8320 kic.go:476] successfully stopped kubernetes!
+I0503 15:25:06.637157    8320 kic_runner.go:93] Run: pgrep kube-apiserver
+I0503 15:25:06.637157    8320 kic_runner.go:114] Args: [docker exec --privileged minikube pgrep kube-apiserver]
+I0503 15:25:06.834949    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:09.971516    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:13.094612    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:16.218153    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:19.351817    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:22.452678    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:25.576858    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:28.725122    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:31.874885    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:35.016367    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:38.159427    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:41.344713    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:44.518598    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:47.711001    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:50.834069    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:53.954858    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:25:57.115460    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:00.233594    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:03.360857    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:06.495334    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:09.633325    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:12.755150    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:15.885150    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:19.021316    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:22.165160    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:25.314898    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:28.446721    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:31.572732    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:34.709148    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:37.830529    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:40.975356    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:44.113370    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:47.282920    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:50.442105    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:53.594791    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:56.741217    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:26:59.863707    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:03.000064    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:06.137788    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:09.284678    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:12.430729    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:15.565487    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:18.719756    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:21.843216    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:24.961909    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:28.099725    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:31.230369    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:34.395029    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:37.531804    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:40.668294    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:43.803737    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:46.919742    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:50.059819    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:53.180040    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:56.332278    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:27:59.447391    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:02.567900    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:05.712778    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:08.849890    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:11.982554    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:15.058931    8320 stop.go:66] stop err: Maximum number of retries (60) exceeded
+W0503 15:28:15.058931    8320 delete.go:93] stop host: Temporary Error: stop: Maximum number of retries (60) exceeded
+W0503 15:28:16.059523    8320 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0503 15:28:16.083040    8320 out.go:177] 🔥  Deleting "minikube" in docker ...
+I0503 15:28:16.142685    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+I0503 15:28:16.235526    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:16.324424    8320 cli_runner.go:164] Run: docker exec --privileged -t minikube /bin/bash -c "sudo init 0"
+W0503 15:28:16.401363    8320 cli_runner.go:211] docker exec --privileged -t minikube /bin/bash -c "sudo init 0" returned with exit code 1
+I0503 15:28:16.401363    8320 oci.go:656] error shutdown minikube: docker exec --privileged -t minikube /bin/bash -c "sudo init 0": exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:28:17.445354    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:17.516799    8320 oci.go:670] temporary error: container minikube status is Error but expect it to be exited
+I0503 15:28:17.516799    8320 oci.go:676] Successfully shutdown container minikube
+I0503 15:28:17.532245    8320 cli_runner.go:164] Run: docker rm -f -v minikube
+W0503 15:28:17.607570    8320 cli_runner.go:211] docker rm -f -v minikube returned with exit code 1
+I0503 15:28:17.624261    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+W0503 15:28:17.694733    8320 delete.go:106] remove failed, will retry: expected no container ID be found for "minikube" after delete. but got "f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a\n"
+I0503 15:28:18.733185    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+I0503 15:28:18.823415    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:18.912398    8320 cli_runner.go:164] Run: docker exec --privileged -t minikube /bin/bash -c "sudo init 0"
+W0503 15:28:18.993805    8320 cli_runner.go:211] docker exec --privileged -t minikube /bin/bash -c "sudo init 0" returned with exit code 1
+I0503 15:28:18.993805    8320 oci.go:656] error shutdown minikube: docker exec --privileged -t minikube /bin/bash -c "sudo init 0": exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:28:20.046929    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:20.131744    8320 oci.go:670] temporary error: container minikube status is Error but expect it to be exited
+I0503 15:28:20.131744    8320 oci.go:676] Successfully shutdown container minikube
+I0503 15:28:20.148275    8320 cli_runner.go:164] Run: docker rm -f -v minikube
+W0503 15:28:20.224896    8320 cli_runner.go:211] docker rm -f -v minikube returned with exit code 1
+I0503 15:28:20.241475    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+W0503 15:28:20.318333    8320 start.go:719] delete host: host remove retry: expected no container ID be found for "minikube" after delete. but got "f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a\n"
+W0503 15:28:20.318333    8320 out.go:270] 🤦  StartHost failed, but will try again: creating host: create: creating: setting up container node: preparing volume for minikube container: docker run --rm --name minikube-preload-sidecar --label created_by.minikube.sigs.k8s.io=true --label name.minikube.sigs.k8s.io=minikube --entrypoint /usr/bin/test -v minikube:/var gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 -d /var/lib: exit status 125
+stdout:
+
+stderr:
+docker: Error response from daemon: mkdir /var/lib/docker/overlay2/eb5683e3442f4dbe83775760f43ca84856e58984e13731f29233993e3bfdb587-init: read-only file system
+
+Run 'docker run --help' for more information
+
+I0503 15:28:20.320337    8320 start.go:729] Will try again in 5 seconds ...
+I0503 15:28:25.321538    8320 start.go:360] acquireMachinesLock for minikube: {Name:mk4af82f6c8e908e241a1473311731182e9c0ca7 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0503 15:28:25.321957    8320 start.go:364] duration metric: took 247.6µs to acquireMachinesLock for "minikube"
+I0503 15:28:25.322343    8320 start.go:96] Skipping create...Using existing machine configuration
+I0503 15:28:25.323616    8320 fix.go:54] fixHost starting: 
+I0503 15:28:25.327472    8320 out.go:177] 📌  Noticed you have an activated docker-env on docker driver in this terminal:
+W0503 15:28:25.330845    8320 out.go:270] ❗  Please re-eval your docker-env, To ensure your environment variables have updated ports:
+
+	'minikube -p minikube docker-env'
+
+	
+I0503 15:28:25.400291    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:25.478357    8320 fix.go:112] recreateIfNeeded on minikube: state=Error err=<nil>
+W0503 15:28:25.478357    8320 fix.go:138] unexpected machine state, will restart: <nil>
+W0503 15:28:25.478357    8320 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0503 15:28:25.480635    8320 out.go:177] 🔄  Restarting existing docker container for "minikube" ...
+I0503 15:28:25.503304    8320 cli_runner.go:164] Run: docker start minikube
+W0503 15:28:25.597681    8320 cli_runner.go:211] docker start minikube returned with exit code 1
+I0503 15:28:25.618681    8320 cli_runner.go:164] Run: docker inspect minikube
+I0503 15:28:25.696211    8320 errors.go:84] Postmortem inspect ("docker inspect minikube"): -- stdout --
+[
+    {
+        "Id": "f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a",
+        "Created": "2025-05-02T12:02:46.887537738Z",
+        "Path": "/usr/local/bin/entrypoint",
+        "Args": [
+            "/sbin/init"
+        ],
+        "State": {
+            "Status": "dead",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": true,
+            "Pid": 0,
+            "ExitCode": 137,
+            "Error": "container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a: driver \"overlay2\" failed to remove root filesystem: unlinkat /var/lib/docker/overlay2/4bc89d518231d253939d2f376c991f105966526ec4fc73b1887aa3221724f434: read-only file system",
+            "StartedAt": "2025-05-03T09:02:28.011645299Z",
+            "FinishedAt": "2025-05-03T09:50:48.067875593Z"
+        },
+        "Image": "sha256:e72c4cbe9b296d8a58fbcae1a7b969fa1cee662cd7b86f2d4efc5e146519cf0a",
+        "ResolvConfPath": "/var/lib/docker/containers/f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a/hostname",
+        "HostsPath": "/var/lib/docker/containers/f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a/hosts",
+        "LogPath": "/var/lib/docker/containers/f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a/f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a-json.log",
+        "Name": "/minikube",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/lib/modules:/lib/modules:ro",
+                "minikube:/var"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "minikube",
+            "PortBindings": {
+                "22/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "0"
+                    }
+                ],
+                "2376/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "0"
+                    }
+                ],
+                "32443/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "0"
+                    }
+                ],
+                "5000/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "0"
+                    }
+                ],
+                "8443/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "0"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "seccomp=unconfined",
+                "apparmor=unconfined",
+                "label=disable"
+            ],
+            "Tmpfs": {
+                "/run": "",
+                "/tmp": ""
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2306867200,
+            "NanoCpus": 2000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 2306867200,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a",
+                "LowerDir": "/var/lib/docker/overlay2/4bc89d518231d253939d2f376c991f105966526ec4fc73b1887aa3221724f434-init/diff:/var/lib/docker/overlay2/14efb41539c8c80bd2aae6e2c3556fca40e17f12caf0afa187796d38e4017ba0/diff",
+                "MergedDir": "/var/lib/docker/overlay2/4bc89d518231d253939d2f376c991f105966526ec4fc73b1887aa3221724f434/merged",
+                "UpperDir": "/var/lib/docker/overlay2/4bc89d518231d253939d2f376c991f105966526ec4fc73b1887aa3221724f434/diff",
+                "WorkDir": "/var/lib/docker/overlay2/4bc89d518231d253939d2f376c991f105966526ec4fc73b1887aa3221724f434/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/lib/modules",
+                "Destination": "/lib/modules",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "minikube",
+                "Source": "/var/lib/docker/volumes/minikube/_data",
+                "Destination": "/var",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "minikube",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "22/tcp": {},
+                "2376/tcp": {},
+                "32443/tcp": {},
+                "5000/tcp": {},
+                "8443/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "container=docker",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": null,
+            "Image": "gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "/usr/local/bin/entrypoint",
+                "/sbin/init"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "created_by.minikube.sigs.k8s.io": "true",
+                "mode.minikube.sigs.k8s.io": "minikube",
+                "name.minikube.sigs.k8s.io": "minikube",
+                "role.minikube.sigs.k8s.io": ""
+            },
+            "StopSignal": "SIGRTMIN+3"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "minikube": {
+                    "IPAMConfig": {
+                        "IPv4Address": "192.168.49.2"
+                    },
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "",
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "409356c5c39d4014cdd2129c05a05b13a30fa866f96e176e206ee5edf16c7558",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "minikube",
+                        "f8cdb703c68b"
+                    ]
+                }
+            }
+        }
+    }
+]
+
+-- /stdout --
+I0503 15:28:25.713380    8320 cli_runner.go:164] Run: docker logs --timestamps --details minikube
+W0503 15:28:25.796228    8320 cli_runner.go:211] docker logs --timestamps --details minikube returned with exit code 1
+W0503 15:28:25.796228    8320 errors.go:89] Failed to get postmortem logs. docker logs --timestamps --details minikube :docker logs --timestamps --details minikube: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: can not get logs from container which is dead or marked for removal
+I0503 15:28:25.813488    8320 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+I0503 15:28:26.342635    8320 info.go:266] docker info: {ID:41f8f2fd-d88e-4794-80c9-f02bd6943dde Containers:9 ContainersRunning:1 ContainersPaused:0 ContainersStopped:8 Images:4 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:false BridgeNfIP6Tables:false Debug:false NFd:78 OomKillDisable:true NGoroutines:93 SystemTime:2025-05-03 09:58:26.311537909 +0000 UTC LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:17 KernelVersion:5.15.167.4-microsoft-standard-WSL2 OperatingSystem:Docker Desktop OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[::1/128 127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:4 MemTotal:4073578496 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy:http.docker.internal:3128 HTTPSProxy:http.docker.internal:3128 NoProxy:hubproxy.docker.internal Name:docker-desktop Labels:[com.docker.desktop.address=npipe://\\.\pipe\docker_cli] ExperimentalBuild:false ServerVersion:28.0.4 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:753481ec61c7c8955a23d6ff7bc8e4daed455734 Expected:753481ec61c7c8955a23d6ff7bc8e4daed455734} RuncCommit:{ID:v1.2.5-0-g59923ef Expected:v1.2.5-0-g59923ef} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=unconfined] ProductLicense: Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set WARNING: daemon is not using the default seccomp profile] ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:ai Path:C:\Program Files\Docker\cli-plugins\docker-ai.exe SchemaVersion:0.1.0 ShortDescription:Docker AI Agent - Ask Gordon Vendor:Docker Inc. Version:v1.1.3] map[Name:buildx Path:C:\Program Files\Docker\cli-plugins\docker-buildx.exe SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.22.0-desktop.1] map[Name:cloud Path:C:\Program Files\Docker\cli-plugins\docker-cloud.exe SchemaVersion:0.1.0 ShortDescription:Docker Cloud Vendor:Docker Inc. Version:0.2.20] map[Name:compose Path:C:\Program Files\Docker\cli-plugins\docker-compose.exe SchemaVersion:0.1.0 ShortDescription:Docker Compose Vendor:Docker Inc. Version:v2.34.0-desktop.1] map[Name:debug Path:C:\Program Files\Docker\cli-plugins\docker-debug.exe SchemaVersion:0.1.0 ShortDescription:Get a shell into any image or container Vendor:Docker Inc. Version:0.0.38] map[Name:desktop Path:C:\Program Files\Docker\cli-plugins\docker-desktop.exe SchemaVersion:0.1.0 ShortDescription:Docker Desktop commands (Beta) Vendor:Docker Inc. Version:v0.1.6] map[Name:dev Path:C:\Program Files\Docker\cli-plugins\docker-dev.exe SchemaVersion:0.1.0 ShortDescription:Docker Dev Environments Vendor:Docker Inc. Version:v0.1.2] map[Name:extension Path:C:\Program Files\Docker\cli-plugins\docker-extension.exe SchemaVersion:0.1.0 ShortDescription:Manages Docker extensions Vendor:Docker Inc. Version:v0.2.27] map[Name:init Path:C:\Program Files\Docker\cli-plugins\docker-init.exe SchemaVersion:0.1.0 ShortDescription:Creates Docker-related starter files for your project Vendor:Docker Inc. Version:v1.4.0] map[Name:sbom Path:C:\Program Files\Docker\cli-plugins\docker-sbom.exe SchemaVersion:0.1.0 ShortDescription:View the packaged-based Software Bill Of Materials (SBOM) for an image URL:https://github.com/docker/sbom-cli-plugin Vendor:Anchore Inc. Version:0.6.0] map[Name:scout Path:C:\Program Files\Docker\cli-plugins\docker-scout.exe SchemaVersion:0.1.0 ShortDescription:Docker Scout Vendor:Docker Inc. Version:v1.17.0]] Warnings:<nil>}}
+I0503 15:28:26.342635    8320 errors.go:98] postmortem docker info: {ID:41f8f2fd-d88e-4794-80c9-f02bd6943dde Containers:9 ContainersRunning:1 ContainersPaused:0 ContainersStopped:8 Images:4 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:false BridgeNfIP6Tables:false Debug:false NFd:78 OomKillDisable:true NGoroutines:93 SystemTime:2025-05-03 09:58:26.311537909 +0000 UTC LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:17 KernelVersion:5.15.167.4-microsoft-standard-WSL2 OperatingSystem:Docker Desktop OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[::1/128 127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:4 MemTotal:4073578496 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy:http.docker.internal:3128 HTTPSProxy:http.docker.internal:3128 NoProxy:hubproxy.docker.internal Name:docker-desktop Labels:[com.docker.desktop.address=npipe://\\.\pipe\docker_cli] ExperimentalBuild:false ServerVersion:28.0.4 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:753481ec61c7c8955a23d6ff7bc8e4daed455734 Expected:753481ec61c7c8955a23d6ff7bc8e4daed455734} RuncCommit:{ID:v1.2.5-0-g59923ef Expected:v1.2.5-0-g59923ef} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=unconfined] ProductLicense: Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set WARNING: daemon is not using the default seccomp profile] ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:ai Path:C:\Program Files\Docker\cli-plugins\docker-ai.exe SchemaVersion:0.1.0 ShortDescription:Docker AI Agent - Ask Gordon Vendor:Docker Inc. Version:v1.1.3] map[Name:buildx Path:C:\Program Files\Docker\cli-plugins\docker-buildx.exe SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.22.0-desktop.1] map[Name:cloud Path:C:\Program Files\Docker\cli-plugins\docker-cloud.exe SchemaVersion:0.1.0 ShortDescription:Docker Cloud Vendor:Docker Inc. Version:0.2.20] map[Name:compose Path:C:\Program Files\Docker\cli-plugins\docker-compose.exe SchemaVersion:0.1.0 ShortDescription:Docker Compose Vendor:Docker Inc. Version:v2.34.0-desktop.1] map[Name:debug Path:C:\Program Files\Docker\cli-plugins\docker-debug.exe SchemaVersion:0.1.0 ShortDescription:Get a shell into any image or container Vendor:Docker Inc. Version:0.0.38] map[Name:desktop Path:C:\Program Files\Docker\cli-plugins\docker-desktop.exe SchemaVersion:0.1.0 ShortDescription:Docker Desktop commands (Beta) Vendor:Docker Inc. Version:v0.1.6] map[Name:dev Path:C:\Program Files\Docker\cli-plugins\docker-dev.exe SchemaVersion:0.1.0 ShortDescription:Docker Dev Environments Vendor:Docker Inc. Version:v0.1.2] map[Name:extension Path:C:\Program Files\Docker\cli-plugins\docker-extension.exe SchemaVersion:0.1.0 ShortDescription:Manages Docker extensions Vendor:Docker Inc. Version:v0.2.27] map[Name:init Path:C:\Program Files\Docker\cli-plugins\docker-init.exe SchemaVersion:0.1.0 ShortDescription:Creates Docker-related starter files for your project Vendor:Docker Inc. Version:v1.4.0] map[Name:sbom Path:C:\Program Files\Docker\cli-plugins\docker-sbom.exe SchemaVersion:0.1.0 ShortDescription:View the packaged-based Software Bill Of Materials (SBOM) for an image URL:https://github.com/docker/sbom-cli-plugin Vendor:Anchore Inc. Version:0.6.0] map[Name:scout Path:C:\Program Files\Docker\cli-plugins\docker-scout.exe SchemaVersion:0.1.0 ShortDescription:Docker Scout Vendor:Docker Inc. Version:v1.17.0]] Warnings:<nil>}}
+I0503 15:28:26.360635    8320 network_create.go:284] running [docker network inspect minikube] to gather additional debugging logs...
+I0503 15:28:26.360635    8320 cli_runner.go:164] Run: docker network inspect minikube
+I0503 15:28:26.435678    8320 network_create.go:289] output of [docker network inspect minikube]: -- stdout --
+[
+    {
+        "Name": "minikube",
+        "Id": "409356c5c39d4014cdd2129c05a05b13a30fa866f96e176e206ee5edf16c7558",
+        "Created": "2025-05-02T12:02:06.162531068Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "192.168.49.0/24",
+                    "Gateway": "192.168.49.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "ep-fe7166d960999be85a943786fa6b6675582ef779438028720038762ce3cb729f": {
+                "Name": "minikube",
+                "EndpointID": "fe7166d960999be85a943786fa6b6675582ef779438028720038762ce3cb729f",
+                "MacAddress": "1a:6a:14:53:5d:67",
+                "IPv4Address": "192.168.49.2/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "--icc": "",
+            "--ip-masq": "",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {
+            "created_by.minikube.sigs.k8s.io": "true",
+            "name.minikube.sigs.k8s.io": "minikube"
+        }
+    }
+]
+
+-- /stdout --
+I0503 15:28:26.453778    8320 cli_runner.go:164] Run: docker system info --format "{{json .}}"
+I0503 15:28:26.931278    8320 info.go:266] docker info: {ID:41f8f2fd-d88e-4794-80c9-f02bd6943dde Containers:9 ContainersRunning:1 ContainersPaused:0 ContainersStopped:8 Images:4 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:<nil> Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:<nil> Log:[awslogs fluentd gcplogs gelf journald json-file local splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:false BridgeNfIP6Tables:false Debug:false NFd:78 OomKillDisable:true NGoroutines:93 SystemTime:2025-05-03 09:58:26.886434358 +0000 UTC LoggingDriver:json-file CgroupDriver:cgroupfs NEventsListener:17 KernelVersion:5.15.167.4-microsoft-standard-WSL2 OperatingSystem:Docker Desktop OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:{AllowNondistributableArtifactsCIDRs:[] AllowNondistributableArtifactsHostnames:[] InsecureRegistryCIDRs:[::1/128 127.0.0.0/8] IndexConfigs:{DockerIo:{Name:docker.io Mirrors:[] Secure:true Official:true}} Mirrors:[]} NCPU:4 MemTotal:4073578496 GenericResources:<nil> DockerRootDir:/var/lib/docker HTTPProxy:http.docker.internal:3128 HTTPSProxy:http.docker.internal:3128 NoProxy:hubproxy.docker.internal Name:docker-desktop Labels:[com.docker.desktop.address=npipe://\\.\pipe\docker_cli] ExperimentalBuild:false ServerVersion:28.0.4 ClusterStore: ClusterAdvertise: Runtimes:{Runc:{Path:runc}} DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:<nil>} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:753481ec61c7c8955a23d6ff7bc8e4daed455734 Expected:753481ec61c7c8955a23d6ff7bc8e4daed455734} RuncCommit:{ID:v1.2.5-0-g59923ef Expected:v1.2.5-0-g59923ef} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=unconfined] ProductLicense: Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set WARNING: daemon is not using the default seccomp profile] ServerErrors:[] ClientInfo:{Debug:false Plugins:[map[Name:ai Path:C:\Program Files\Docker\cli-plugins\docker-ai.exe SchemaVersion:0.1.0 ShortDescription:Docker AI Agent - Ask Gordon Vendor:Docker Inc. Version:v1.1.3] map[Name:buildx Path:C:\Program Files\Docker\cli-plugins\docker-buildx.exe SchemaVersion:0.1.0 ShortDescription:Docker Buildx Vendor:Docker Inc. Version:v0.22.0-desktop.1] map[Name:cloud Path:C:\Program Files\Docker\cli-plugins\docker-cloud.exe SchemaVersion:0.1.0 ShortDescription:Docker Cloud Vendor:Docker Inc. Version:0.2.20] map[Name:compose Path:C:\Program Files\Docker\cli-plugins\docker-compose.exe SchemaVersion:0.1.0 ShortDescription:Docker Compose Vendor:Docker Inc. Version:v2.34.0-desktop.1] map[Name:debug Path:C:\Program Files\Docker\cli-plugins\docker-debug.exe SchemaVersion:0.1.0 ShortDescription:Get a shell into any image or container Vendor:Docker Inc. Version:0.0.38] map[Name:desktop Path:C:\Program Files\Docker\cli-plugins\docker-desktop.exe SchemaVersion:0.1.0 ShortDescription:Docker Desktop commands (Beta) Vendor:Docker Inc. Version:v0.1.6] map[Name:dev Path:C:\Program Files\Docker\cli-plugins\docker-dev.exe SchemaVersion:0.1.0 ShortDescription:Docker Dev Environments Vendor:Docker Inc. Version:v0.1.2] map[Name:extension Path:C:\Program Files\Docker\cli-plugins\docker-extension.exe SchemaVersion:0.1.0 ShortDescription:Manages Docker extensions Vendor:Docker Inc. Version:v0.2.27] map[Name:init Path:C:\Program Files\Docker\cli-plugins\docker-init.exe SchemaVersion:0.1.0 ShortDescription:Creates Docker-related starter files for your project Vendor:Docker Inc. Version:v1.4.0] map[Name:sbom Path:C:\Program Files\Docker\cli-plugins\docker-sbom.exe SchemaVersion:0.1.0 ShortDescription:View the packaged-based Software Bill Of Materials (SBOM) for an image URL:https://github.com/docker/sbom-cli-plugin Vendor:Anchore Inc. Version:0.6.0] map[Name:scout Path:C:\Program Files\Docker\cli-plugins\docker-scout.exe SchemaVersion:0.1.0 ShortDescription:Docker Scout Vendor:Docker Inc. Version:v1.17.0]] Warnings:<nil>}}
+I0503 15:28:26.956476    8320 ssh_runner.go:195] Run: sh -c "df -h /var | awk 'NR==2{print $5}'"
+I0503 15:28:26.973717    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:27.053502    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:28:27.053502    8320 retry.go:31] will retry after 173.884372ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:27.267078    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:27.343622    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:28:27.343622    8320 retry.go:31] will retry after 389.316214ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:27.756063    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:27.836753    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:28:27.836753    8320 retry.go:31] will retry after 621.873189ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:28.501494    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:28.590018    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+W0503 15:28:28.590018    8320 start.go:268] error running df -h /var: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+W0503 15:28:28.590018    8320 start.go:235] error getting percentage of /var that is free: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:28.613940    8320 ssh_runner.go:195] Run: sh -c "df -BG /var | awk 'NR==2{print $4}'"
+I0503 15:28:28.629928    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:28.701313    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:28:28.701313    8320 retry.go:31] will retry after 193.769623ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:28.937104    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:29.020725    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:28:29.020725    8320 retry.go:31] will retry after 411.427912ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:29.460877    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:29.537455    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+I0503 15:28:29.537455    8320 retry.go:31] will retry after 486.173887ms: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:30.054785    8320 cli_runner.go:164] Run: docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube
+W0503 15:28:30.130387    8320 cli_runner.go:211] docker container inspect -f "'{{(index (index .NetworkSettings.Ports "22/tcp") 0).HostPort}}'" minikube returned with exit code 1
+W0503 15:28:30.130387    8320 start.go:283] error running df -BG /var: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+W0503 15:28:30.130387    8320 start.go:240] error getting GiB of /var that is available: NewSession: new client: new client: Error creating new ssh host from driver: Error getting ssh port for driver: get ssh host-port: unable to inspect a not running container to get SSH port
+I0503 15:28:30.130387    8320 fix.go:56] duration metric: took 4.8070008s for fixHost
+I0503 15:28:30.130387    8320 start.go:83] releasing machines lock for "minikube", held for 4.8084306s
+W0503 15:28:30.283845    8320 out.go:270] 😿  Failed to start docker container. Running "minikube delete" may fix it: driver start: start: docker start minikube: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container is marked for removal and cannot be started
+Error: failed to start containers: minikube
+
+W0503 15:28:30.286811    8320 out.go:270] ❗  Startup with docker driver failed, trying with alternate driver virtualbox: Failed to start host: driver start: start: docker start minikube: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container is marked for removal and cannot be started
+Error: failed to start containers: minikube
+
+I0503 15:28:30.292531    8320 config.go:182] Loaded profile config "minikube": Driver=docker, ContainerRuntime=docker, KubernetesVersion=v1.32.0
+I0503 15:28:30.292794    8320 delete.go:329] Deleting minikube
+I0503 15:28:30.293085    8320 delete.go:334] minikube configuration: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:docker HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\bhask:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0503 15:28:30.294719    8320 out.go:177] 🔥  Deleting "minikube" in docker ...
+I0503 15:28:30.345336    8320 delete.go:48] deleting possible leftovers for minikube (driver=docker) ...
+I0503 15:28:30.370608    8320 cli_runner.go:164] Run: docker ps -a --filter label=name.minikube.sigs.k8s.io=minikube --format {{.Names}}
+W0503 15:28:30.457472    8320 register.go:133] "Deleting" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0503 15:28:30.462790    8320 out.go:177] 🔥  Deleting container "minikube" ...
+I0503 15:28:30.485976    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:30.580448    8320 cli_runner.go:164] Run: docker exec --privileged -t minikube /bin/bash -c "sudo init 0"
+W0503 15:28:30.664044    8320 cli_runner.go:211] docker exec --privileged -t minikube /bin/bash -c "sudo init 0" returned with exit code 1
+I0503 15:28:30.664044    8320 oci.go:656] error shutdown minikube: docker exec --privileged -t minikube /bin/bash -c "sudo init 0": exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:28:31.708326    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:31.782959    8320 oci.go:670] temporary error: container minikube status is Error but expect it to be exited
+I0503 15:28:31.782959    8320 oci.go:676] Successfully shutdown container minikube
+I0503 15:28:31.799064    8320 cli_runner.go:164] Run: docker rm -f -v minikube
+W0503 15:28:31.872994    8320 cli_runner.go:211] docker rm -f -v minikube returned with exit code 1
+E0503 15:28:31.872994    8320 delete.go:56] error deleting container "minikube". You may want to delete it manually :
+delete minikube: docker rm -f -v minikube: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a: driver "overlay2" failed to remove root filesystem: unlinkat /var/lib/docker/overlay2/4bc89d518231d253939d2f376c991f105966526ec4fc73b1887aa3221724f434: read-only file system
+I0503 15:28:31.873555    8320 volumes.go:79] trying to delete all docker volumes with label name.minikube.sigs.k8s.io=minikube
+I0503 15:28:31.892595    8320 cli_runner.go:164] Run: docker volume ls --filter label=name.minikube.sigs.k8s.io=minikube --format {{.Name}}
+I0503 15:28:31.981286    8320 cli_runner.go:164] Run: docker volume rm --force minikube
+W0503 15:28:32.061029    8320 cli_runner.go:211] docker volume rm --force minikube returned with exit code 1
+W0503 15:28:32.061029    8320 delete.go:64] error deleting volumes (might be okay).
+To see the list of volumes run: 'docker volume ls'
+:[deleting "minikube"]
+I0503 15:28:32.077607    8320 cli_runner.go:164] Run: docker network ls --filter=label=name.minikube.sigs.k8s.io=minikube --format {{.Name}}
+I0503 15:28:32.168571    8320 cli_runner.go:164] Run: docker network inspect minikube --format "{"Name": "{{.Name}}","Driver": "{{.Driver}}","Subnet": "{{range .IPAM.Config}}{{.Subnet}}{{end}}","Gateway": "{{range .IPAM.Config}}{{.Gateway}}{{end}}","MTU": {{if (index .Options "com.docker.network.driver.mtu")}}{{(index .Options "com.docker.network.driver.mtu")}}{{else}}0{{end}}, "ContainerIPs": [{{range $k,$v := .Containers }}"{{$v.IPv4Address}}",{{end}}]}"
+I0503 15:28:32.254838    8320 cli_runner.go:164] Run: docker network rm minikube
+W0503 15:28:32.332260    8320 cli_runner.go:211] docker network rm minikube returned with exit code 1
+W0503 15:28:32.332260    8320 delete.go:69] error deleting leftover networks (might be okay).
+To see the list of networks: 'docker network ls'
+:[unable to delete a network that is attached to a running container]
+I0503 15:28:32.332260    8320 volumes.go:101] trying to prune all docker volumes with label name.minikube.sigs.k8s.io=minikube
+I0503 15:28:32.349489    8320 cli_runner.go:164] Run: docker volume prune -f --filter label=name.minikube.sigs.k8s.io=minikube
+I0503 15:28:32.423728    8320 config.go:182] Loaded profile config "minikube": Driver=docker, ContainerRuntime=docker, KubernetesVersion=v1.32.0
+I0503 15:28:32.424833    8320 config.go:182] Loaded profile config "minikube": Driver=docker, ContainerRuntime=docker, KubernetesVersion=v1.32.0
+I0503 15:28:32.462276    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:32.537584    8320 stop.go:39] StopHost: minikube
+W0503 15:28:32.538132    8320 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0503 15:28:32.539806    8320 out.go:177] ✋  Stopping node "minikube"  ...
+I0503 15:28:32.580521    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:32.658815    8320 stop.go:87] host is in state Error
+I0503 15:28:32.658815    8320 main.go:141] libmachine: Stopping "minikube"...
+I0503 15:28:32.690547    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:32.812901    8320 kic_runner.go:93] Run: sudo service kubelet stop
+I0503 15:28:32.812901    8320 kic_runner.go:114] Args: [docker exec --privileged minikube sudo service kubelet stop]
+W0503 15:28:32.905146    8320 kic.go:453] couldn't stop kubelet. will continue with stop anyways: sudo service kubelet stop: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:28:32.944147    8320 kic_runner.go:93] Run: sudo service kubelet stop
+I0503 15:28:32.944147    8320 kic_runner.go:114] Args: [docker exec --privileged minikube sudo service kubelet stop]
+W0503 15:28:33.025466    8320 kic.go:455] couldn't force stop kubelet. will continue with stop anyways: sudo service kubelet stop: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:28:33.063782    8320 kic_runner.go:93] Run: docker ps -a --filter=name=k8s_.*_(kube-system|kubernetes-dashboard|storage-gluster|istio-operator)_ --format={{.ID}}
+I0503 15:28:33.063782    8320 kic_runner.go:114] Args: [docker exec --privileged minikube docker ps -a --filter=name=k8s_.*_(kube-system|kubernetes-dashboard|storage-gluster|istio-operator)_ --format={{.ID}}]
+I0503 15:28:33.145889    8320 kic.go:466] unable list containers : docker: docker ps -a --filter=name=k8s_.*_(kube-system|kubernetes-dashboard|storage-gluster|istio-operator)_ --format={{.ID}}: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:28:33.145889    8320 kic.go:476] successfully stopped kubernetes!
+I0503 15:28:33.186889    8320 kic_runner.go:93] Run: pgrep kube-apiserver
+I0503 15:28:33.186889    8320 kic_runner.go:114] Args: [docker exec --privileged minikube pgrep kube-apiserver]
+I0503 15:28:33.399900    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:36.529433    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:39.650961    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:42.779822    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:45.916197    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:49.040666    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:52.176196    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:55.296179    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:28:58.452815    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:01.580947    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:04.726375    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:07.885755    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:11.068120    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:14.204932    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:17.363139    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:20.475582    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:23.623737    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:26.747253    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:29.884256    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:33.000071    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:36.134742    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:39.281291    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:42.430351    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:45.566851    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:48.695091    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:51.812593    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:54.933121    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:29:58.068968    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:01.179320    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:04.357117    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:07.674638    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:10.807146    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:13.956094    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:17.125809    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:20.296210    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:23.461387    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:26.621042    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:29.799081    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:32.953100    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:36.101976    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:39.236534    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:42.387305    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:45.547795    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:48.701064    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:51.851447    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:55.013192    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:30:58.161124    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:01.337383    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:04.473707    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:07.634936    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:10.778046    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:13.926914    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:17.080198    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:20.225884    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:23.372286    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:26.510266    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:29.669399    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:32.823781    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:35.988280    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:39.132432    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:42.218334    8320 stop.go:66] stop err: Maximum number of retries (60) exceeded
+W0503 15:31:42.218334    8320 delete.go:93] stop host: Temporary Error: stop: Maximum number of retries (60) exceeded
+W0503 15:31:43.219419    8320 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0503 15:31:43.284085    8320 out.go:177] 🔥  Deleting "minikube" in docker ...
+I0503 15:31:43.330302    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+I0503 15:31:43.441744    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:43.546742    8320 cli_runner.go:164] Run: docker exec --privileged -t minikube /bin/bash -c "sudo init 0"
+W0503 15:31:43.647443    8320 cli_runner.go:211] docker exec --privileged -t minikube /bin/bash -c "sudo init 0" returned with exit code 1
+I0503 15:31:43.647443    8320 oci.go:656] error shutdown minikube: docker exec --privileged -t minikube /bin/bash -c "sudo init 0": exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:31:44.673037    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:44.772675    8320 oci.go:670] temporary error: container minikube status is Error but expect it to be exited
+I0503 15:31:44.772675    8320 oci.go:676] Successfully shutdown container minikube
+I0503 15:31:44.797811    8320 cli_runner.go:164] Run: docker rm -f -v minikube
+W0503 15:31:44.905280    8320 cli_runner.go:211] docker rm -f -v minikube returned with exit code 1
+I0503 15:31:44.936836    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+W0503 15:31:45.054205    8320 delete.go:106] remove failed, will retry: expected no container ID be found for "minikube" after delete. but got "f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a\n"
+I0503 15:31:46.083096    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+I0503 15:31:46.201148    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:46.834264    8320 cli_runner.go:164] Run: docker exec --privileged -t minikube /bin/bash -c "sudo init 0"
+W0503 15:31:46.944252    8320 cli_runner.go:211] docker exec --privileged -t minikube /bin/bash -c "sudo init 0" returned with exit code 1
+I0503 15:31:46.944252    8320 oci.go:656] error shutdown minikube: docker exec --privileged -t minikube /bin/bash -c "sudo init 0": exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:31:47.977259    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:31:48.099191    8320 oci.go:670] temporary error: container minikube status is Error but expect it to be exited
+I0503 15:31:48.099191    8320 oci.go:676] Successfully shutdown container minikube
+I0503 15:31:48.127044    8320 cli_runner.go:164] Run: docker rm -f -v minikube
+W0503 15:31:48.231765    8320 cli_runner.go:211] docker rm -f -v minikube returned with exit code 1
+I0503 15:31:48.257779    8320 cli_runner.go:164] Run: docker container inspect -f {{.Id}} minikube
+W0503 15:31:48.352667    8320 out.go:270] ❌  Failed to delete cluster: host remove retry: expected no container ID be found for "minikube" after delete. but got "f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a\n"
+I0503 15:31:49.366961    8320 out.go:177] 📌  You may need to manually remove the "minikube" VM from your hypervisor
+I0503 15:31:49.398711    8320 out.go:177] 🔥  Removing C:\Users\bhask\.minikube\machines\minikube ...
+W0503 15:31:49.434238    8320 out.go:270] ❗  Failed to delete cluster minikube, proceeding with retry anyway.
+I0503 15:31:49.438837    8320 start.go:297] selected driver: virtualbox
+I0503 15:31:49.438837    8320 start.go:901] validating driver "virtualbox" against <nil>
+I0503 15:31:49.438837    8320 start.go:912] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.8r156879
+}
+I0503 15:31:49.439371    8320 start_flags.go:310] no existing cluster config was found, will generate one from the flags 
+I0503 15:31:49.439371    8320 start_flags.go:393] Using suggested 2200MB memory alloc based on sys=8122MB, container=0MB
+I0503 15:31:49.442364    8320 start_flags.go:929] Wait components to verify : map[apiserver:true system_pods:true]
+I0503 15:31:49.442364    8320 cni.go:84] Creating CNI manager for ""
+I0503 15:31:49.442364    8320 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0503 15:31:49.443365    8320 start_flags.go:319] Found "bridge CNI" CNI - setting NetworkPlugin=cni
+I0503 15:31:49.443365    8320 start.go:340] cluster config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\bhask:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0503 15:31:49.457816    8320 iso.go:125] acquiring lock: {Name:mkabb12cb97764fba46d589c6ea27ea5ca8a4623 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+W0503 15:31:49.480940    8320 register.go:133] "Stopping" was not found within the registered steps for "Initial Minikube Setup": [Initial Minikube Setup Selecting Driver Downloading Artifacts Starting Node Updating Driver Pulling Base Image Running on Localhost Local OS Release Creating Container Creating VM Running Remotely Preparing Kubernetes Generating certificates Booting control plane Configuring RBAC rules Configuring CNI Configuring Localhost Environment Verifying Kubernetes Enabling Addons Done]
+I0503 15:31:49.521084    8320 out.go:177] 💿  Downloading VM boot image ...
+I0503 15:31:49.531532    8320 download.go:108] Downloading: https://storage.googleapis.com/minikube/iso/minikube-v1.35.0-amd64.iso?checksum=file:https://storage.googleapis.com/minikube/iso/minikube-v1.35.0-amd64.iso.sha256 -> C:\Users\bhask\.minikube\cache\iso\amd64\minikube-v1.35.0-amd64.iso
+I0503 15:37:32.336438    8320 out.go:177] 👍  Starting "minikube" primary control-plane node in "minikube" cluster
+I0503 15:37:32.338471    8320 preload.go:131] Checking if preload exists for k8s version v1.32.0 and runtime docker
+I0503 15:37:32.338471    8320 cache.go:56] Caching tarball of preloaded images
+I0503 15:37:32.339477    8320 preload.go:172] Found C:\Users\bhask\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.32.0-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0503 15:37:32.339477    8320 cache.go:59] Finished verifying existence of preloaded tar for v1.32.0 on docker
+I0503 15:37:32.339477    8320 profile.go:143] Saving config to C:\Users\bhask\.minikube\profiles\minikube\config.json ...
+I0503 15:37:32.339477    8320 lock.go:35] WriteFile acquiring C:\Users\bhask\.minikube\profiles\minikube\config.json: {Name:mk8d56141b6498c791e09addd325dfb10f110163 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0503 15:37:32.341474    8320 start.go:360] acquireMachinesLock for minikube: {Name:mkdee4a69481297c1c65641305c2533d07a8ecae Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0503 15:37:32.341474    8320 start.go:364] duration metric: took 0s to acquireMachinesLock for "minikube"
+I0503 15:37:32.341474    8320 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.35.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\bhask:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s} &{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0503 15:37:32.341474    8320 start.go:125] createHost starting for "" (driver="virtualbox")
+I0503 15:37:32.344474    8320 out.go:235] 🔥  Creating virtualbox VM (CPUs=2, Memory=2200MB, Disk=20000MB) ...
+I0503 15:37:32.348474    8320 start.go:159] libmachine.API.Create for "minikube" (driver="virtualbox")
+I0503 15:37:32.348474    8320 client.go:168] LocalClient.Create starting
+I0503 15:37:32.348474    8320 main.go:141] libmachine: Reading certificate data from C:\Users\bhask\.minikube\certs\ca.pem
+I0503 15:37:32.350476    8320 main.go:141] libmachine: Decoding PEM data...
+I0503 15:37:32.350476    8320 main.go:141] libmachine: Parsing certificate...
+I0503 15:37:32.350476    8320 main.go:141] libmachine: Reading certificate data from C:\Users\bhask\.minikube\certs\cert.pem
+I0503 15:37:32.351471    8320 main.go:141] libmachine: Decoding PEM data...
+I0503 15:37:32.351471    8320 main.go:141] libmachine: Parsing certificate...
+I0503 15:37:32.351471    8320 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe --version
+I0503 15:37:32.468668    8320 main.go:141] libmachine: STDOUT:
+{
+7.0.8r156879
+}
+I0503 15:37:32.468668    8320 main.go:141] libmachine: STDERR:
+{
+}
+I0503 15:37:32.498588    8320 main.go:141] libmachine: Hyper-V is not installed.
+%!(EXTRA *exec.Error=exec: "vmms.exe": executable file not found in %PATH%)
+I0503 15:37:32.498588    8320 client.go:171] duration metric: took 150.1136ms to LocalClient.Create
+I0503 15:37:34.499274    8320 start.go:128] duration metric: took 2.1578007s to createHost
+I0503 15:37:34.499274    8320 start.go:83] releasing machines lock for "minikube", held for 2.1578007s
+W0503 15:37:34.499274    8320 start.go:714] error starting host: creating host: create: precreate: This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory
+I0503 15:37:34.523879    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:37:34.631137    8320 cli_runner.go:164] Run: docker exec --privileged -t minikube /bin/bash -c "sudo init 0"
+W0503 15:37:34.718781    8320 cli_runner.go:211] docker exec --privileged -t minikube /bin/bash -c "sudo init 0" returned with exit code 1
+I0503 15:37:34.718781    8320 oci.go:656] error shutdown minikube: docker exec --privileged -t minikube /bin/bash -c "sudo init 0": exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container f8cdb703c68b018713356a3c7fbdc578900dcf3c6947355ffe1c9530e60ec64a is not running
+I0503 15:37:35.740766    8320 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+I0503 15:37:35.833024    8320 oci.go:670] temporary error: container minikube status is Error but expect it to be exited
+I0503 15:37:35.833024    8320 oci.go:676] Successfully shutdown container minikube
+I0503 15:37:35.978604    8320 cli_runner.go:164] Run: podman container inspect minikube --format={{.State.Status}}
+I0503 15:37:35.979604    8320 delete.go:46] couldn't inspect container "minikube" before deleting: unknown state "minikube": podman container inspect minikube --format={{.State.Status}}: exec: "podman": executable file not found in %PATH%
+stdout:
+
+stderr:
+W0503 15:37:35.979604    8320 start.go:719] delete host: Docker machine "minikube" does not exist. Use "docker-machine ls" to list machines. Use "docker-machine create" to add a new one.
+W0503 15:37:35.979604    8320 out.go:270] 🤦  StartHost failed, but will try again: creating host: create: precreate: This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory
+I0503 15:37:35.980612    8320 start.go:729] Will try again in 5 seconds ...
+I0503 15:37:40.982242    8320 start.go:360] acquireMachinesLock for minikube: {Name:mkdee4a69481297c1c65641305c2533d07a8ecae Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0503 15:37:40.982242    8320 start.go:364] duration metric: took 0s to acquireMachinesLock for "minikube"
+I0503 15:37:40.983110    8320 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.35.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.46@sha256:fd2d445ddcc33ebc5c6b68a17e6219ea207ce63c005095ea1525296da2d1a279 Memory:2200 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.32.0 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\bhask:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s} &{Name: IP: Port:8443 KubernetesVersion:v1.32.0 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0503 15:37:40.983425    8320 start.go:125] createHost starting for "" (driver="virtualbox")
+I0503 15:37:40.991995    8320 out.go:235] 🔥  Creating virtualbox VM (CPUs=2, Memory=2200MB, Disk=20000MB) ...
+I0503 15:37:40.994748    8320 start.go:159] libmachine.API.Create for "minikube" (driver="virtualbox")
+I0503 15:37:40.994748    8320 client.go:168] LocalClient.Create starting
+I0503 15:37:40.995654    8320 main.go:141] libmachine: Reading certificate data from C:\Users\bhask\.minikube\certs\ca.pem
+I0503 15:37:40.995879    8320 main.go:141] libmachine: Decoding PEM data...
+I0503 15:37:40.995879    8320 main.go:141] libmachine: Parsing certificate...
+I0503 15:37:40.996543    8320 main.go:141] libmachine: Reading certificate data from C:\Users\bhask\.minikube\certs\cert.pem
+I0503 15:37:40.996543    8320 main.go:141] libmachine: Decoding PEM data...
+I0503 15:37:40.996543    8320 main.go:141] libmachine: Parsing certificate...
+I0503 15:37:40.997063    8320 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe --version
+I0503 15:37:41.047615    8320 main.go:141] libmachine: STDOUT:
+{
+7.0.8r156879
+}
+I0503 15:37:41.047615    8320 main.go:141] libmachine: STDERR:
+{
+}
+I0503 15:37:41.076884    8320 main.go:141] libmachine: Hyper-V is not installed.
+%!(EXTRA *exec.Error=exec: "vmms.exe": executable file not found in %PATH%)
+I0503 15:37:41.076884    8320 client.go:171] duration metric: took 82.1362ms to LocalClient.Create
+I0503 15:37:43.077865    8320 start.go:128] duration metric: took 2.0944401s to createHost
+I0503 15:37:43.077865    8320 start.go:83] releasing machines lock for "minikube", held for 2.0956233s
+W0503 15:37:43.077865    8320 out.go:270] 😿  Failed to start virtualbox VM. Running "minikube delete" may fix it: creating host: create: precreate: This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory
+I0503 15:37:43.520951    8320 out.go:201] 
+W0503 15:37:43.544957    8320 out.go:270] ❌  Exiting due to GUEST_PROVISION: error provisioning guest: Failed to start host: driver start: start: docker start minikube: exit status 1
+stdout:
+
+stderr:
+Error response from daemon: container is marked for removal and cannot be started
+Error: failed to start containers: minikube
+
+W0503 15:37:43.553594    8320 out.go:270] 
+W0503 15:37:43.612523    8320 out.go:293] [31m╭───────────────────────────────────────────────────────────────────────────────────────────╮[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    😿  If the above advice does not help, please let us know:                             [31m│[0m
+[31m│[0m    👉  https://github.com/kubernetes/minikube/issues/new/choose                           [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────╯[0m
+I0503 15:37:43.632629    8320 out.go:201] 
+
+
