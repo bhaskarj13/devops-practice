@@ -1,4 +1,3 @@
-# deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,14 +14,6 @@ spec:
     spec:
       containers:
       - name: devops-practice
-        image: devops-practice:latest
+        image: bhaskar13/devops-practice:latest
         ports:
-          - containerPort: 3000
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "250m"
-          limits:
-            memory: "256Mi"
-            cpu: "500m"
-        imagePullPolicy: IfNotPresent
+        - containerPort: 3000
